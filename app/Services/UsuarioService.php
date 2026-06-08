@@ -142,6 +142,12 @@ class UsuarioService{
         ];
     }
 
+    public function criarUsuarioInicial(): void{
+        if (!$this->usuarioRepository->existeAlgumUsuario()) {
+            $this->usuarioRepository->criarUsuarioPadrao();
+        }
+    }
+
     private function validar(array $dados, bool $senhaObrigatoria): array{
         $erros = [];
 

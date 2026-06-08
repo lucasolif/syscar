@@ -77,6 +77,28 @@ class UsuarioRepository{
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function existeAlgumUsuario(): bool{
+        $sql = "SELECT COUNT(*) FROM usuarios";
+        $stmt = $this->conn->query($sql);
+
+        return $stmt->fetchColumn() > 0;
+    }
+
+    public function criarUsuarioPadrao(): void{
+        $sql = "
+            INSERT INTO usuarios (nome, login, senha, ativo)
+            VALUES (:nome, :login, :senha, true)
+        ";
+
+        $stmt = $this->conn->prepare($sql);
+
+        $stmt->execute([
+            ':nome' => 'Administrador',
+            ':login' => 'admin',
+            ':senha' => password_hash('admin123', PASSWORD_DEFAULT)
+        ]);
+    }
+
     public function salvar(Usuario $usuario): void{
         $sql = "
             INSERT INTO usuarios (nome, login,senha, ativo)

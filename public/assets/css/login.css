@@ -1,0 +1,49 @@
+
+body {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    min-height: 100vh;
+}
+
+.login-container {
+    min-height: 100vh;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+    border-top: 6px solid #f77f00;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.login-title {
+    color: #0d1b2a;
+    font-weight: 700;
+}
+
+.login-icon {
+    font-size: 42px;
+}
+
+.btn-login {
+    background-color: #f77f00;
+    border-color: #f77f00;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-login:hover {
+    background-color: #d96f00;
+    border-color: #d96f00;
+    color: white;
+}
+
+.system-name {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.system-subtitle {
+    color: #dbe4ee;
+}

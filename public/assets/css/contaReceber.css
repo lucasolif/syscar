@@ -1,0 +1,19 @@
+.status-pago {
+    color: #198754 !important;
+    font-weight: bold !important;
+}
+
+.status-pendente {
+    color: #0d6efd !important;
+    font-weight: bold !important;
+}
+
+.status-parcial {
+    color: #b8860b !important;
+    font-weight: bold !important;
+}
+
+.status-cancelada {
+    color: #dc3545 !important;
+    font-weight: bold !important;
+}

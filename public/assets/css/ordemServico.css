@@ -1,0 +1,31 @@
+.quantidade-grid {
+    width: 100px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    outline: none;
+}
+
+.quantidade-grid:focus {
+    border-bottom: 1px solid #0d6efd !important;
+}
+
+.status-aberta {
+    color: #198754 !important;
+    font-weight: bold !important;
+}
+
+.status-fechada {
+    color: #0d6efd !important;
+    font-weight: bold !important;
+}
+
+.status-faturada {
+    color: #b8860b !important;
+    font-weight: bold !important;
+}
+
+.status-cancelada {
+    color: #dc3545 !important;
+    font-weight: bold !important;
+}

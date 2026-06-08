@@ -1,0 +1,72 @@
+body {
+    background-color: #f4f6f9;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #0d1b2a, #1b263b) !important;
+    border-bottom: 3px solid #f77f00;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #ffffff !important;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand::before {
+    content: "⚙️ ";
+}
+
+.nav-link {
+    color: #dbe4ee !important;
+}
+
+.nav-link:hover {
+    color: #f77f00 !important;
+}
+
+.bg-light {
+    background: linear-gradient(135deg, #ffffff, #e9f1fb) !important;
+    border-left: 6px solid #f77f00;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.display-5 {
+    color: #0d1b2a;
+}
+
+.card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card-body h5 {
+    color: #0d1b2a;
+    font-weight: 700;
+}
+.campo-readonly {
+    background-color: #e9ecef !important;
+    color: #212529 !important;
+    font-weight: 600;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f77f00;
+    border-color: #f77f00;
+    color: white;
+}
+
+.sticky-header th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #212529; /* mesma cor do table-dark */
+    color: white;
+}

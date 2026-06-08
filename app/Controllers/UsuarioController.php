@@ -13,7 +13,6 @@ class UsuarioController{
     }
 
     public function index(): void{
-        $this->usuarioService->criarUsuarioInicial();
         require __DIR__ . '/../Views/usuario/form-cadastro.php';
     }
 

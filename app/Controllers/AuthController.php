@@ -4,15 +4,20 @@ namespace App\Controllers;
 
 use App\Core\Flash;
 use App\Services\AuthService;
+use App\Services\UsuarioService;
 
 class AuthController{
     private AuthService $authService;
+    private UsuarioService $usuarioService;
 
     public function __construct(){
         $this->authService = new AuthService();
+        $this->usuarioService = new UsuarioService();
     }
 
     public function login(): void{
+
+        $this->usuarioService->criarUsuarioInicial();
 
         if (isset($_SESSION['usuario_id'])) {
             header('Location: /inicio');
